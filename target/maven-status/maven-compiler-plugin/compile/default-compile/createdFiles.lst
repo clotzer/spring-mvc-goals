@@ -1,0 +1,8 @@
+com/clotzer/model/Goal.class
+com/clotzer/service/GoalService.class
+com/clotzer/security/SecurityConfiguration.class
+com/clotzer/controller/WelcomeController.class
+com/clotzer/model/Goal$Priority.class
+com/clotzer/controller/LogoutController.class
+com/clotzer/controller/GoalController.class
+com/clotzer/model/Goal$Category.class
