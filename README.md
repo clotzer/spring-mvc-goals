@@ -82,20 +82,7 @@ spring-mvc-goals
 2. Build the project using Maven:
    ```bash
    mvn clean install
-│   │   └── resources
-│   │       ├── application.properties
-│   │       └── static
-│   └── test
-│       └── java
-│           └── com
-│               └── clotzer
-│                   └── goals
-│                       ├── controller
-│                       ├── service
-│
-├── pom.xml
-└── README.md
-```
+   ```
 
 ## Getting Started
 
@@ -144,22 +131,17 @@ mvn test
 
 ## Testing with Mockito and JUnit
 
-This project includes unit tests for the service and controller layers using Mockito and JUnit. Example tests are located in the `src/test/java/com/example/goals` directory.
+This project includes unit tests for the service layer using Mockito and JUnit. Example tests are located in the `src/test/java/com/clotzer/` directory.
 
 ### Sample Test
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
 public class GoalServiceTests {
-
-    @MockBean
-    private GoalRepository goalRepository;
 
     @Autowired
     private GoalService goalService;
 
     @Test
-    public void testCreateGoal() {
+    public void addGoalTest() {
         Goal goal = new Goal("Clean the garage");
         Mockito.when(goalRepository.save(goal)).thenReturn(goal);
 
